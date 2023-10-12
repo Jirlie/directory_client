@@ -1,0 +1,262 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-09 00:49:13.795416",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company_name",
+  "company_logo",
+  "tagline",
+  "company_description",
+  "domain",
+  "company_size",
+  "phone_no",
+  "address_section",
+  "address_line_1",
+  "address_line_2",
+  "citytown",
+  "stateprovince",
+  "postal_code",
+  "country",
+  "website",
+  "email",
+  "google_map_iframe",
+  "company_pictures_section",
+  "picture_1",
+  "picture_2",
+  "picture_3",
+  "details_section",
+  "currency",
+  "prodcuts",
+  "preferred_selling_list",
+  "preferred_buying_list",
+  "about_tab",
+  "brief",
+  "brief_1",
+  "brief_2",
+  "brief_3"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_logo",
+   "fieldtype": "Attach Image",
+   "label": "Company Logo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tagline",
+   "fieldtype": "Data",
+   "label": "Tagline"
+  },
+  {
+   "fieldname": "company_description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Company Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "domain",
+   "fieldtype": "Link",
+   "label": "Domain",
+   "options": "Industry Type"
+  },
+  {
+   "fieldname": "company_size",
+   "fieldtype": "Select",
+   "label": "Company Size",
+   "options": "\n0 - 10 employees\n11 - 50 employees\n51 - 200 employees\n201 - 500 employees\n501 - 1000 employees\n1001 - 5000 employees\n5001 - 10000 employees\n10000+ employees"
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Phone",
+   "label": "Phone No."
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "address_section",
+   "fieldtype": "Tab Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "citytown",
+   "fieldtype": "Data",
+   "label": "City/Town"
+  },
+  {
+   "fieldname": "stateprovince",
+   "fieldtype": "Data",
+   "label": "State/Province"
+  },
+  {
+   "fieldname": "postal_code",
+   "fieldtype": "Data",
+   "label": "Postal Code"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website",
+   "options": "URL"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "google_map_iframe",
+   "fieldtype": "Code",
+   "label": "Google Map IFrame"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "company_pictures_section",
+   "fieldtype": "Tab Break",
+   "label": "Company Pictures"
+  },
+  {
+   "fieldname": "picture_1",
+   "fieldtype": "Attach Image",
+   "label": "Picture 1"
+  },
+  {
+   "fieldname": "picture_2",
+   "fieldtype": "Attach Image",
+   "label": "Picture 2"
+  },
+  {
+   "fieldname": "picture_3",
+   "fieldtype": "Attach Image",
+   "label": "Picture 3"
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Tab Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "prodcuts",
+   "fieldtype": "Data",
+   "label": "Prodcuts"
+  },
+  {
+   "fieldname": "preferred_selling_list",
+   "fieldtype": "Data",
+   "label": "Preferred Selling List"
+  },
+  {
+   "fieldname": "preferred_buying_list",
+   "fieldtype": "Data",
+   "label": "Preferred Buying List"
+  },
+  {
+   "fieldname": "about_tab",
+   "fieldtype": "Tab Break",
+   "label": "About"
+  },
+  {
+   "fieldname": "brief",
+   "fieldtype": "Data",
+   "label": "Brief"
+  },
+  {
+   "fieldname": "brief_1",
+   "fieldtype": "Data",
+   "label": "Brief 1"
+  },
+  {
+   "fieldname": "brief_2",
+   "fieldtype": "Data",
+   "label": "Brief 2"
+  },
+  {
+   "fieldname": "brief_3",
+   "fieldtype": "Data",
+   "label": "Brief 3"
+  }
+ ],
+ "image_field": "company_logo",
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-10-09 01:22:38.400306",
+ "modified_by": "Administrator",
+ "module": "Directory Client",
+ "name": "Business Directory",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "All",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Guest",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "company_name"
+}
