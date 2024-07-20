@@ -12,7 +12,7 @@ app_license = "MIT"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/directory_client/css/directory_client.css"
-# app_include_js = "/assets/directory_client/js/directory_client.js"
+app_include_js = "/assets/directory_client/js/note.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/directory_client/css/directory_client.css"
@@ -215,3 +215,7 @@ app_license = "MIT"
 # auth_hooks = [
 #	"directory_client.auth.validate"
 # ]
+
+# on_session_creation = "directory_client.api.check_setup"
+
+# on_logout = "directory_client.api.check_setup"

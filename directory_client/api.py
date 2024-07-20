@@ -107,7 +107,11 @@ def contact(first_name, last_name, phone, company, job_title, email, subject, de
     doc.insert(ignore_permissions=True)
     return doc
 
-
+@frappe.whitelist()
+def check_setup():
+    directory = frappe.db.get_single_value("Business Directory", "completed")
+    if not directory:
+        return frappe.msgprint(f"Please Complete Jirlie Business Directory Setup From <a href="'/app/business-directory/Business%20Directory'">Here</a>")
 
 
 

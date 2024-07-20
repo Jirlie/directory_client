@@ -232,23 +232,23 @@ login.login_handlers = (function () {
 				const video = document.getElementById("loading-video");
 				const loadVideo = document.getElementById("load-video");
 				const loadVideoOne = document.getElementById("load-video-1");
-				
+
 				if (window.innerWidth <= 768) {
-				  let source = document.createElement("source");
-				  video.append(source);
-				  source.src = `assets/jirlie_template/video/mobile_hd.mp4`;
-				  source.type = `video/mp4`;
+					let source = document.createElement("source");
+					video.append(source);
+					source.src = `assets/jirlie_template/video/mobile_hd.mp4`;
+					source.type = `video/mp4`;
 				} else {
-				  let source = document.createElement("source");
-				  video.append(source);
-				  source.src = `assets/jirlie_template/video/desktop_hd.MP4`;
-				  source.type = `video/mp4`;
+					let source = document.createElement("source");
+					video.append(source);
+					source.src = `assets/jirlie_template/video/desktop_hd.MP4`;
+					source.type = `video/mp4`;
 				}
 				video.addEventListener("ended", () => {
-				  document.getElementById("loader").style.display = `none`;
-				  window.location.href = frappe.utils.sanitise_redirect(frappe.utils.get_url_arg("redirect-to")) || data.home_page;
+					document.getElementById("loader").style.display = `none`;
+					window.location.href = frappe.utils.sanitise_redirect(frappe.utils.get_url_arg("redirect-to")) || data.home_page;
 				});
-				
+
 			} else if (data.message == 'Password Reset') {
 				window.location.href = frappe.utils.sanitise_redirect(data.redirect_to);
 			} else if (data.message == "No App") {

@@ -5,4 +5,5 @@
 from frappe.model.document import Document
 
 class BusinessDirectory(Document):
-	pass
+	def validate(self):
+		self.completed = 1

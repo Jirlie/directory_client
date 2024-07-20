@@ -14,6 +14,8 @@
   "domain",
   "company_size",
   "phone_no",
+  "completed",
+  "sent",
   "address_section",
   "address_line_1",
   "address_line_2",
@@ -207,13 +209,25 @@
    "fieldname": "brief_3",
    "fieldtype": "Data",
    "label": "Brief 3"
+  },
+  {
+   "default": "0",
+   "fieldname": "completed",
+   "fieldtype": "Check",
+   "label": "Completed"
+  },
+  {
+   "default": "0",
+   "fieldname": "sent",
+   "fieldtype": "Check",
+   "label": "Sent"
   }
  ],
  "image_field": "company_logo",
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2023-10-09 01:22:38.400306",
+ "modified": "2024-07-09 08:53:47.328335",
  "modified_by": "Administrator",
  "module": "Directory Client",
  "name": "Business Directory",
